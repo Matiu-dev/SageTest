@@ -1,0 +1,38 @@
+plugins {
+  id 'application'
+  id 'org.openjfx.javafxplugin' version '0.0.9'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'com.github.KwabenBerko:News-API-Java:1.0.0'
+
+    //retrofit and gson
+    implementation 'com.squareup.retrofit2:retrofit:(2.9.0)'
+    implementation 'com.google.code.gson:gson:2.8.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.1.0'
+
+    //junit
+    testRuntimeOnly("org.junit.platform:junit-platform-launcher:1.7.2")
+    testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:5.3.2")
+    testRuntimeOnly("org.junit.vintage:junit-vintage-engine:5.3.2")
+    testCompile("org.junit.jupiter:junit-jupiter-api:5.0.0-M3")
+
+
+}
+
+javafx {
+    version = "16"
+    modules = [ 'javafx.controls', 'javafx.fxml' ]
+}
+
+mainClassName = 'org.openjfx.MainApp'
+
+allprojects {
+    repositories {
+        maven { url 'https://jitpack.io' }
+    }
+}
