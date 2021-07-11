@@ -11,4 +11,5 @@ gson
 
 # Sposób uruchamiania:
 
-
+* jeden
+* dwa
