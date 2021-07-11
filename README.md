@@ -11,5 +11,5 @@ gson
 
 # Sposób uruchamiania:
 
-* jeden
-* dwa
+* Gradle -> Tasks -> build -> build -> click and run
+* Gradle -> Tasks -> application -> run -> click and run
