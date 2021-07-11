@@ -60,9 +60,15 @@ public class FXMLController implements Initializable {
 
         @FXML
         public void saveToFile() {
-                service.save(pathTextField.getText().trim(),
+                String result = service.save(pathTextField.getText().trim(),
                         resultTextArea.getText().trim(),
                         fileNameTextField.getText().trim());
+
+                if(result.equals("OK")){
+                        resultSaveText.setText("Saved");
+                }else {
+                        resultSaveText.setText("Not Saved");
+                }
         }
 
 

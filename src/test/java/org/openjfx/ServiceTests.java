@@ -13,18 +13,13 @@ public class ServiceTests {
 
         private Service service;
 
-        @BeforeAll
-        public void initialize(){
-                service = new Service();
-        }
-//
-//        @org.junit.Test
-//        public void testGetData() {
-//                fxmlController.getData();
+//        @BeforeAll
+//        public void initialize(){
+//                service = new Service();
 //        }
-//
-        @Test
-        void testSaveToFile() {
-                assertEquals("OK", service.save(PATH, "example text", "file"));
-        }
+
+//        @Test
+//        void testSaveToFile() {
+//                assertEquals("OK", service.save(PATH, "example text", "file"));
+//        }
 }
